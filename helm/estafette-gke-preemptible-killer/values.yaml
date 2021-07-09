@@ -14,7 +14,7 @@ interval: 300
 
 secret:
   # if set to true the values are already base64 encoded when provided, otherwise the template performs the base64 encoding
-  valuesAreBase64Encoded: false
+  valuesAreBase64Encoded: true
 
   # when using estafette-gcp-service account controller to fetch key files, set this to true and leave googleServiceAccountKeyfileJson empty
   useGcpServiceAccountAnnotation: false
@@ -35,7 +35,7 @@ logFormat: plaintext
 replicaCount: 1
 
 image:
-  repository: estafette/estafette-gke-preemptible-killer
+  repository: setme
   # The tag can be set to override the appVersion getting used as the image tag
   tag:
   pullPolicy: IfNotPresent
